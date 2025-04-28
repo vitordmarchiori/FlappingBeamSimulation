@@ -74,8 +74,3 @@ The script will automatically:
 
 - This project is modular. You can adjust parameters such as amplitude, beam stiffness (EI), frequency, and total simulation time at the top of the `simulation_code.py` script.
 - Animations and frames are automatically saved into organized folders.
-
----
-
-### 🚀 Designed for advanced aero-structural and renewable energy research.
-### 🔥 Ready for academic publications, aerospace projects, and energy harvesting studies!
