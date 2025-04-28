@@ -6,7 +6,7 @@ It uses a **dynamic Euler-Bernoulli beam model** discretized with **1D Finite El
 
 
 <p align="center">
-  <img src="banner.gif" alt="Flapping Wing UAV Simulation GIF Banner" width="100%">
+  <img Animations="banner.gif" alt="Flapping Wing UAV Simulation GIF Banner" width="100%">
 </p>
 
 
