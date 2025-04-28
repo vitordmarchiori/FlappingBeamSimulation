@@ -52,7 +52,7 @@ The script will automatically:
 
 ---
 
-## 🎯 Engineering Objectives
+## 🎯 Objectives
 
 - Analyze the effect of **structural flexibility** on solar energy harvesting efficiency.
 - Optimize **flapping parameters** to maximize solar panel energy capture.
