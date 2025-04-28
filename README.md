@@ -65,5 +65,5 @@ It uses a **dynamic Euler-Bernoulli beam model** discretized with **1D Finite El
 ## 📌 Notes
 This project is modular. You can easily adjust parameters such as amplitude, stiffness, frequency, and simulation time at the top of the script.
 
-# 🚀 Designed for aero-structural and solar energy integration studies.
+### 🚀 Designed for aero-structural and solar energy integration studies.
 ### 🔥 Ready to be used for studies, research publications, and advanced aerospace project development!
