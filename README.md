@@ -1,74 +1,81 @@
 # 🛩️ Flapping Beam Simulation with Solar Energy Harvesting – Flapping-Wing UAV
 
-This project simulates, analyzes, and visualizes the structural behavior of a flapping-wing UAV (Unmanned Aerial Vehicle) wing equipped with solar panels distributed along its structure.
+This project simulates, analyzes, and visualizes the structural behavior of a flapping-wing UAV (Unmanned Aerial Vehicle) wing equipped with solar panels distributed along its surface.
 
-It uses a **dynamic Euler-Bernoulli beam model** discretized with **1D Finite Element Method (FEM)**, also integrating the **calculation of solar irradiance** captured by each panel during the flapping motion.
-
+It uses a **dynamic Euler-Bernoulli beam model** discretized with the **1D Finite Element Method (FEM)**, integrating the **dynamic calculation of solar irradiance** captured by each panel during the flapping motion.
 
 <p align="center">
   <img src="Animations/banner.gif" alt="Flapping Wing UAV Simulation Banner" width="100%">
 </p>
 
+---
 
 ## 📦 Project Structure
 
-- `simular_viga()` – Runs the dynamic simulation of the beam for different stiffnesses and frequencies.
-- `animar_viga()` – Animates the deformation of the wing over time.
-- `animar_irradiancia()` – Animates the solar irradiance distribution over time across the panels.
-- `salvar_frame_viga()` – Saves `.png` images of the beam deformation at specific time frames.
-- `salvar_frame_irradiancia()` – Saves `.png` images of the solar irradiance distribution at specific time frames.
-- `analise_tabelas()` – Generates comparison tables for energy harvested vs stiffness/frequency.
+- `simulate_beam()` – Runs the dynamic simulation of the beam for a given stiffness and flapping frequency.
+- `animate_beam()` – Animates the structural deformation of the wing during the flapping motion.
+- `animate_irradiance()` – Animates the distribution of solar irradiance over the wing panels.
+- `save_beam_frame()` – Saves `.png` images of the beam deformation at specific frames.
+- `save_irradiance_frame()` – Saves `.png` images of the solar irradiance distribution at specific frames.
 
+---
 
 ## 🔧 Requirements
 
 - Python 3.8+
-- Libraries:
+- Required Libraries:
   - `numpy`
   - `matplotlib`
   - `pandas`
   - `tabulate`
-- To save animations in `.mp4`, you must have `ffmpeg` installed:
-  - Install via: `conda install -c conda-forge ffmpeg` or `sudo apt install ffmpeg`
+  - `Pillow` (optional: for GIF creation)
+ 
+---
 
+## 🚀 What to Expect
 
-## 🚀 How to Run
+The script will automatically:
+- Simulate the dynamic behavior of the beam
+- Generate `.mp4` animations of the flapping motion and irradiance distribution
+- Save `.png` snapshots of the beam and solar panels at a chosen frame
 
-1. Execute the main script.
-2. It will automatically:
-   - Simulate the beam under default parameters.
-   - Generate analysis tables (`.csv`).
-   - Display energy and irradiance plots.
-   - Save `.mp4` animations of deformation and irradiance.
-   - Save `.png` snapshots for comparison at specific time frames.
+---
 
+## 📊 Outputs Generated
 
-## 📊 Generated Outputs
+| Output | Description |
+|:-------|:------------|
+| `Animations/beam_animation.mp4` | Animation of the beam flapping motion |
+| `Animations/irradiance_animation.mp4` | Animation of the solar irradiance variation |
+| `Animations/banner.gif` | GIF banner created from the simulation (optional, for README) |
+| `Frames/beam_frame.png` | Snapshot of the beam deformation |
+| `Frames/irradiance_frame.png` | Snapshot of the solar irradiance distribution |
 
-- `analise_rigidez.csv` – Energy captured for different beam stiffness values.
-- `analise_frequencia.csv` – Energy captured for different flapping frequencies.
-- `viga_animacao.mp4` – Animation of the flapping wing (structural deformation).
-- `irradiancia_animacao.mp4` – Animation of the solar irradiance variation.
-- `frame_viga.png` – Snapshot of the wing deformation at a specific time frame.
-- `frame_irradiancia.png` – Snapshot of the irradiance distribution at a specific time frame.
-- 
+---
 
 ## 🎯 Engineering Objectives
 
-- Analyze the impact of **structural flexibility** (variable EI) on solar energy harvesting efficiency.
-- Optimize **rigidity and flapping profiles** to maximize energy capture.
-- **Visually understand** how the flapping dynamics influence energy harvesting.
+- Analyze the effect of **structural flexibility** on solar energy harvesting efficiency.
+- Optimize **flapping parameters** to maximize solar panel energy capture.
+- **Visually understand** the interplay between deformation dynamics and energy harvesting.
 
+---
 
 ## 🧠 Future Improvements
 
-- Implement **variable stiffness EI(x)** along the beam.
-- Simulate **interactive aerodynamic loads** (relative airflow, wind).
-- Include **3D motion** and **solar rotation tracking**.
-- Optimize the **rigidity profile** using machine learning or numerical optimization techniques.
+- Implement **variable stiffness EI(x)** profiles along the wing/beam.
+- Add **aerodynamic forces** (e.g., wind or relative airflow effects).
+- Introduce **solar tracking algorithms** for more realistic sun positioning.
+- Optimize rigidity profiles and flapping motion using **machine learning techniques**.
+
+---
 
 ## 📌 Notes
-This project is modular. You can easily adjust parameters such as amplitude, stiffness, frequency, and simulation time at the top of the script.
 
-### 🚀 Designed for aero-structural and solar energy integration studies.
-### 🔥 Ready to be used for studies, research publications, and advanced aerospace project development!
+- This project is modular. You can adjust parameters such as amplitude, beam stiffness (EI), frequency, and total simulation time at the top of the `simulation_code.py` script.
+- Animations and frames are automatically saved into organized folders.
+
+---
+
+### 🚀 Designed for advanced aero-structural and renewable energy research.
+### 🔥 Ready for academic publications, aerospace projects, and energy harvesting studies!
