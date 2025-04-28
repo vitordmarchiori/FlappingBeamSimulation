@@ -1,14 +1,12 @@
+<p align="center">
+  <img src="banner.gif" alt="Flapping Wing UAV Simulation Banner" width="100%">
+</p>
+
 # 🛩️ Flapping Wing Simulation with Solar Energy Harvesting – Flapping-Wing UAV
 
 This project simulates, analyzes, and visualizes the structural behavior of a flapping-wing UAV (Unmanned Aerial Vehicle) wing equipped with solar panels distributed along its structure.
 
 It uses a **dynamic Euler-Bernoulli beam model** discretized with **1D Finite Element Method (FEM)**, also integrating the **calculation of solar irradiance** captured by each panel during the flapping motion.
-
-
-<p align="center">
-  <img Animations="banner.gif" alt="Flapping Wing UAV Simulation GIF Banner" width="100%">
-</p>
-
 
 ## 📦 Project Structure
 
