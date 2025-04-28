@@ -47,7 +47,6 @@ The script will automatically:
 |:-------|:------------|
 | `Animations/beam_animation.mp4` | Animation of the beam flapping motion |
 | `Animations/irradiance_animation.mp4` | Animation of the solar irradiance variation |
-| `Animations/banner.gif` | GIF banner created from the simulation (optional, for README) |
 | `Frames/beam_frame.png` | Snapshot of the beam deformation |
 | `Frames/irradiance_frame.png` | Snapshot of the solar irradiance distribution |
 
