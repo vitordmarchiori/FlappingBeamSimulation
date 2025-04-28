@@ -5,6 +5,11 @@ This project simulates, analyzes, and visualizes the structural behavior of a fl
 It uses a **dynamic Euler-Bernoulli beam model** discretized with **1D Finite Element Method (FEM)**, also integrating the **calculation of solar irradiance** captured by each panel during the flapping motion.
 
 
+<p align="center">
+  <img src="banner.gif" alt="Flapping Wing UAV Simulation GIF Banner" width="100%">
+</p>
+
+
 ## 📦 Project Structure
 
 - `simular_viga()` – Runs the dynamic simulation of the beam for different stiffnesses and frequencies.
